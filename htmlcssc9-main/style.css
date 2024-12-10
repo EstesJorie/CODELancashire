@@ -1,0 +1,17 @@
+#container_1, #container_2 {
+    background: red;
+    color: white;
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+}
+
+.container{
+    background: blue;
+    font-size: 20px;
+    color: white;
+    padding: 30px;
+}
+
+/* #container_1 > h1 {
+display: flex;
+} */
