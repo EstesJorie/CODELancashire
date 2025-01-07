@@ -11,7 +11,7 @@ trees for each of the models, and their primary puprose is to be displayed in th
 ----------------------------------------------------------------
 INSTALLATION/RUNNING 
 
-This project uses Python via Jupyter Notebook. To install and run the project, download the repo and open the file (ProjectFile.ipynb) in an IDE that supports Juptyer Notebook (i.e. VSCode) or through JuptyerLab/Juptyer Notebook.
+This project uses Python via Jupyter Notebook. To install and run the project, download the repo and open the file (ProjectFile.ipynb) in an IDE that supports Jupyter Notebook (i.e. VSCode) or through JupyterLab/Jupyter Notebook.
 Make sure that the Top10VideoGameStocks.csv remains in the same folder as the project file otherwise the file will not be read in correctly. Also upon starting run the function that clears the CHECKPOINTS folder otherwise
 the backtesting for each model will not run.
 
