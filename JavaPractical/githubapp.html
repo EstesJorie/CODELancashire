@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="max-w-md mx-auto p-6">
+        <form action="" id="user_name-form" class="flex items-center w-full ">
+            <input type="text" name="user_name" id="" placeholder="Enter your GitHub username..." 
+                   class="border border-blue-800 rounded-l p-2 flex-grow"/>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-r">Search</button>
+        </form>
+        <div>
+            <div class="flex items-center gap-4">
+                <img src="" id="userimage" alt="User Image" class="w-16 h-16 rounded-full object-cover object-center">
+                <h3 id="username">Username</h3>
+            </div>
+            <div>
+                <span >Public Repo's: </span>
+                <span id="public_repos">100</span>
+            </div>
+            <div>
+                <span>Followers: </span>
+                <span id="followers">200</span>
+            </div>
+            <div>
+                <span>Following: </span>
+                <span id="following">150</span>
+            </div>
+        </div>
+    </main>  
+    <script src="./script.js"></script>  
+</body>
+</html>
