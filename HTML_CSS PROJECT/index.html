@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   <style>
+
+    :root{
+        --dark: #333;
+        --light: #fff;
+
+        --hbg1: #9f7e69;
+        --hbg2: #907f9f;
+
+        --sbg1: #d2bba0;
+        --sbg2: #a4a5ae;
+
+        --bg1: #f7ffe0;
+        --bg2: #b0c7bd;
+
+        font-size: 1cm;
+        font-family: 'Roboto', 'Arial Narrow Bold', sans-serif;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg);
+        color: var(--dark);
+    }
+
+    header{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px 20px;
+        background-color: var(--hbg1);
+        color: var(--dark);
+        z-index: 1000;
+    }
+
+    header h1, header h2{
+        flex-grow: 1;
+        text-align: center; 
+        margin: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: var(--sbg1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 1000;
+    }
+
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: var(--bg1);
+        color: var(--dark);
+        transition: all 0.15s ease-out    
+    }
+
+    body.theme2 {
+        background-color: var(--bg2);
+        color: var(--bg2);
+    }
+
+    .sidebar.theme2{
+        background-color: var(--sbg2);
+        color: var(--sbg2);
+    }
+
+    header.theme2{
+        background-color: var(--hbg2);
+        color: var(--light);
+    }
+
+    .siderbar.theme2 .changetheme {
+        background-color: var(--bg1);
+        color: var(--dark);
+    }
+    
+    .changetheme{
+        font: inherit;
+        font-size: 0.75cm;  
+        border: none;
+        outline: none;  
+        background-color:var(--dark);  
+        color: var(--light);  
+        cursor: pointer;   
+        transition: all 0.15s ease-out
+    }
+
+    .changetheme:hover {
+        text-decoration: underline;  
+    }
+
+    .profile_links:hover {
+        text-decoration: underline;
+    }
+
+    .profile_links {
+        font-size: 0.5rem;
+        column-count: auto;
+        color: cornflowerblue;
+    }
+   </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl mb-6">Test Profile</h1>
+        <h2 class="text-xs mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit...> </h2>
+    </header>
+  
+    <div class="sidebar">
+        <button class="changetheme" id="changetheme">Theme</button>
+        <script src="change-theme.js"></script>
+
+    </div>
+
+    <div class="h-screen w-screen grid place-items-center">
+        <div class="bg-white max-w-md p-6 rounded-xl shadow">
+            <h1 class="text-3xl mb-4">Profile</h1>
+            <div class="form-input-group">
+                <label for="first_name" class="base-label"> Name </label>
+                <input type="text" name="first_name" id="" class="base-input">
+            </div>
+
+            <div class="profile_links">
+                <a href="https://github.com/EstesJorie">Github</a>
+            </div>
+
+            <div class = "profile_links">
+                <a href="https://www.linkedin.com/in/joseph-tresise-797861315/">LinkedIn</a>
+            </div>
+
+            <div class="form-input-group col-span-2 my-2">
+                <label for="message" class="base-label" default="Here is a place to type something!">What are you thinking about?</label>
+                <textarea name="message" class="base-input" id="" cols="30" rows="4"></textarea>
+            </div>
+
+            <div class="profile_links">
+                <a href="https://everynoise.com/" target="_blank">One of my favourite Websites</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
