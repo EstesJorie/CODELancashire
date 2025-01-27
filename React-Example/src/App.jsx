@@ -1,11 +1,12 @@
 import React from 'react'
 import Heading from './components/Heading'
 import Card from './components/Card'
+import GitHubSearch from './components/GitHubSearch'
 
 export default function App() {
   return (
     <div>
-      <Heading text="First Heading"/> {/* text must match the prop name in Heading.jsx */}
+      {/* <Heading text="First Heading"/> {/* text must match the prop name in Heading.jsx 
 
       <Card title="Product One">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -13,8 +14,9 @@ export default function App() {
         Corrupti, rerum.
 
         <button id='clickbutton'>Click Me!</button>
-      </Card>
+      </Card> */}
 
+      <GitHubSearch />
     </div>
   )
 }
