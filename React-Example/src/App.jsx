@@ -1,7 +1,10 @@
 import React from 'react'
 import Heading from './components/Heading'
 import Card from './components/Card'
+import Counter from './components/Counter'
 import GitHubSearch from './components/GitHubSearch'
+import ProductList from './components/ProductList'
+import PostLists from './components/PostLists'
 
 export default function App() {
   return (
@@ -14,9 +17,11 @@ export default function App() {
         Corrupti, rerum.
 
         <button id='clickbutton'>Click Me!</button>
-      </Card> */}
-
-      <GitHubSearch />
+      </Card> 
+      <Counter />
+      <GitHubSearch /> */}
+      {/*<ProductList />*/}
+      <PostLists />
     </div>
   )
 }
