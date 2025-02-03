@@ -1,15 +1,23 @@
 import React from 'react'
-import Heading from './components/Heading'
-import Card from './components/Card'
-import Counter from './components/Counter'
-import GitHubSearch from './components/GitHubSearch'
-import ProductList from './components/ProductList'
-import PostLists from './components/PostLists'
+import GithubSearch from './pages/GitHubSearch'
+import Counter from './pages/Counter'
+import Products from './pages/Products'
+import PostLists from './pages/PostLists'
+import { Route, Routes } from 'react-router'
+import Layout from './components/Layout'
 
 export default function App() {
   return (
-    <div>
-      {/* <Heading text="First Heading"/> {/* text must match the prop name in Heading.jsx 
+    <Routes>
+        <Route element={<Layout />}>
+          <Route index element= {<GithubSearch />}/>
+          <Route path="/counter" element={<Counter />}/>
+          <Route path="/products" element={<Products />}/>
+          <Route path="/blog" element={<PostLists />}/>
+        </Route>
+    </Routes>
+
+      /* <Heading text="First Heading"/> {/* text must match the prop name in Heading.jsx 
 
       <Card title="Product One">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -19,9 +27,12 @@ export default function App() {
         <button id='clickbutton'>Click Me!</button>
       </Card> 
       <Counter />
-      <GitHubSearch /> */}
-      {/*<ProductList />*/}
-      <PostLists />
-    </div>
+      <GitHubSearch /> */
+
+
+    
+
+    /*<PostLists />*/
+
   )
 }
