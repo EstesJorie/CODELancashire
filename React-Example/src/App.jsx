@@ -5,6 +5,7 @@ import Products from './pages/Products'
 import PostLists from './pages/PostLists'
 import { Route, Routes } from 'react-router'
 import Layout from './components/Layout'
+import Mortgage from './pages/Mortgage'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/counter" element={<Counter />}/>
           <Route path="/products" element={<Products />}/>
           <Route path="/blog" element={<PostLists />}/>
+          <Route path="/mortgagecalc" element={<Mortgage />}/>
         </Route>
     </Routes>
 
