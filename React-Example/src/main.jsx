@@ -5,7 +5,6 @@ import App from './App.jsx' //default export
 import { BrowserRouter } from 'react-router'
 
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

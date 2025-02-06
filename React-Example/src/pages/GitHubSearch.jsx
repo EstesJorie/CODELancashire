@@ -43,13 +43,17 @@ export default function GitHubSearch() {
             </div>
             
             <div>
-                <span>Public repos</span>
+                <span>Public repos: </span>
                 <span id="public_repos">{user.public_repos}</span>
             </div>
 
             <div>
-                <span>Followers</span>
+                <span>Followers: </span>
                 <span id="followers">{user.followers}</span>
+            </div>
+            <div>
+                <span>Follwing: </span>
+                <span id='follwing'>{user.following}</span>
             </div>
         </div> : <p id="error" class="text-red-500 my-2">
             {error}
