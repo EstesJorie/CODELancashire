@@ -1,4 +1,5 @@
 import Counter from "@/components/Counter";
+import ToDoList from "@/components/ToDoList";
 import Image from "next/image";
 
 export default function Page() {
@@ -6,10 +7,7 @@ export default function Page() {
     <div>
       This is my page!
       <Counter />
-
-    Server One
-
-    Server Two
+      <ToDoList />
 
     </div>
   )

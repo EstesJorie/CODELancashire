@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Heading from './Heading';
 
 export default function Counter() {
 
@@ -17,7 +16,6 @@ export default function Counter() {
 
   return (
     <>
-    <Heading>Counter</Heading>
     <div className='flex items-center gap-2'>
         <button onClick={decrement}>-</button>
         <span>{count}</span>
