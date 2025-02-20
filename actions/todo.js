@@ -1,6 +1,6 @@
 "use server"
 
-import { use } from "react"
+import { cache, use } from "react"
 
 // Rules of Creating Server Actions //
 
@@ -25,10 +25,12 @@ export async function createTodo(todoTitle) {
 }
 
 export async function getTodos() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos", 
-        {next: {
-        revalidate: 20
-    }})
-    
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos", {
+        // next: {
+        // revalidate: 20
+        //}
+        //cache: "no-store"
+})
+
     return await res.json()
 }
